@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #1e90ff, #f0f0f0);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #0a74da;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3d3f51;
+        }
+
+        /* Secciones */
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #0a74da;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+        }
+
+        ul li a {
+            color: #0a74da;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: #ff6347;
+        }
+
+        /* Formulario de contacto */
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #0a74da;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        form button {
+            background-color: #0a74da;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0a74da;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SoundSphere</h1>
+        <nav>
+            <ul>
+                <li><a href="#tablaturas">Tablaturas</a></li>
+                <li><a href="#conciertos">Conciertos</a></li>
+                <li><a href="#miembros">Miembros</a></li>
+                <li><a href="#estilo">Estilo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tablaturas">
+            <h2>Tablaturas</h2>
+            <p>Accede a las tablaturas de nuestras canciones organizadas por instrumento.</p>
+        
+            <h3>Guitarra</h3>
+            <ul>
+                <li><a href="#">Canción 1</a></li>
+                <li><a href="#">Canción 2</a></li>
+                <li><a href="#">Canción 3</a></li>
+            </ul>
+        
+            <h3>Bajo</h3>
+            <ul>
+                <li><a href="#">Canción 1</a></li>
+                <li><a href="#">Canción 2</a></li>
+                <li><a href="#">Canción 3</a></li>
+            </ul>
+        
+            <h3>Batería</h3>
+            <ul>
+                <li><a href="#">Canción 1</a></li>
+                <li><a href="#">Canción 2</a></li>
+                <li><a href="#">Canción 3</a></li>
+            </ul>
+        
+            <h3>Voces</h3>
+            <ul>
+                <li><a href="#">Canción 1</a></li>
+                <li><a href="#">Canción 2</a></li>
+                <li><a href="#">Canción 3</a></li>
+            </ul>
+        </section>
+        
+
+        <section id="conciertos">
+            <h2>Próximos Conciertos</h2>
+            <p>Consulta las fechas de nuestros próximos conciertos.</p>
+            <ul>
+                <li>Concierto 1 - Fecha y Lugar</li>
+                <li>Concierto 2 - Fecha y Lugar</li>
+                <li>Concierto 3 - Fecha y Lugar</li>
+            </ul>
+        </section>
+
+        <section id="miembros">
+            <h2>Miembros del Grupo</h2>
+            <p>Conoce a los miembros de nuestra banda.</p>
+            <ul>
+                <li>Miembro 1 - Instrumento</li>
+                <li>Miembro 2 - Instrumento</li>
+                <li>Miembro 3 - Instrumento</li>
+            </ul>
+        </section>
+
+        <section id="estilo">
+            <h2>Estilo Musical</h2>
+            <p>Descubre nuestro estilo musical y nuestras influencias.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SoundSphere. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Gracias por tu mensaje, ' + document.getElementById('name').value + '!');
+        });
+    </script>
+</body>
+</html>
